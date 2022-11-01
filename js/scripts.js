@@ -5,15 +5,15 @@ window.onload = function () {
 
       let legalAdult = document.getElementById("adult");
       legalAdult.setAttribute("class", "hidden");
-      let minors = document.getElementById("minor");
-      minors.setAttribute("class", "hidden");
+      let under18 = document.getElementById("minor");
+      under18.setAttribute("class", "hidden");
 
       const age = parseInt(document.querySelector("input#age").value);
       
       if (age >= 18) {
         legalAdult.removeAttribute("class");
       } else {
-        minors.removeAttribute("class");
+        under18.removeAttribute("class");
       }
     };
   };
