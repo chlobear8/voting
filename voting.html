@@ -5,4 +5,27 @@
     <script src="js/scripts.js"></script>
     <title>Voting Information</title>
   </head>
+  <body>
+    <div>
+      <form>
+        <label for="age">We need to verify that you are of legal voting age. How old are you?</label>
+        <input id="age" type="number">
+        <button type="submit">submit</button>
+      </form>
+
+      <div id="adult" class="hidden">
+        <h1>You are eligible to vote!</h1>
+        <h2>Here are some resources for votiting information.</h2>
+        <a href="https://sos.oregon.gov/voting/Pages/registration.aspx?lang=en">Oregon Online Voter Registration</a>
+      </div>
+
+      <div id="minor" class="hidden"></div>
+      <h1>You are too young to vote</h1>
+      <h2>But you can still do things, here are some resources if you're a minor</h2>
+
+      <a href="">Volunteer, or something</a>
+      </div>
+
+    </div>
+  </body>
 </html>
